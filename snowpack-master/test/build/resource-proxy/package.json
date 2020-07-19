@@ -1,0 +1,7 @@
+{
+  "description": "A test to make sure that URLs for resources don’t have backslashes on Windows",
+  "scripts": {
+    "start": "node ../../../pkg/dist-node/index.bin.js dev",
+    "TEST": "node ../../../pkg/dist-node/index.bin.js build"
+  }
+}

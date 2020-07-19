@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "TEST": "node ../../../pkg/dist-node/index.bin.js"
+  },
+  "snowpack": {
+    "install": ["preact", "preact/hooks", "preact/debug"],
+    "buildOptions": {
+      "minify": false
+    }
+  },
+  "dependencies": {
+    "preact": "^10.4.4"
+  }
+}

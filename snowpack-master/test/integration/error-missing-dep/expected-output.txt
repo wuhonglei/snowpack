@@ -1,0 +1,2 @@
+⠼ snowpack installing... preact
+✖ Package "preact" not found. Have you installed it?

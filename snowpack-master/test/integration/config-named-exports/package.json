@@ -1,0 +1,18 @@
+{
+  "description": "Handle installOptions.namedExports",
+  "scripts": {
+    "TEST": "node ../../../pkg/dist-node/index.bin.js"
+  },
+  "snowpack": {
+    "install": ["mock-test-package"],
+    "installOptions": {
+      "namedExports": ["mock-test-package"]
+    },
+    "buildOptions": {
+      "minify": false
+    }
+  },
+  "dependencies": {
+    "mock-test-package": "^1.0.0"
+  }
+}

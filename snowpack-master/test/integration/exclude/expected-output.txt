@@ -1,0 +1,4 @@
+✔ snowpack install complete.
+  ⦿ web_modules/      size       gzip       brotli
+    ├─ vue-router.js    XXXX KB    XXXX KB    XXXX KB
+    └─ vue.js    XXXX KB    XXXX KB    XXXX KB

@@ -1,0 +1,24 @@
+{
+  "description": "Handle deep imports to package entrypoints",
+  "scripts": {
+    "TEST": "node ../../../pkg/dist-node/index.bin.js"
+  },
+  "snowpack": {
+    "installOptions": {
+      "alias": {
+        "react": "preact/compat",
+        "react-dom": "preact/compat"
+      }
+    },
+    "install": [
+      "react",
+      "react-dom"
+    ],
+    "buildOptions": {
+      "minify": false
+    }
+  },
+  "dependencies": {
+    "preact": "^10.0.0"
+  }
+}

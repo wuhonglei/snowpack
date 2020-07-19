@@ -1,0 +1,4 @@
+✔ snowpack install complete.
+  ⦿ web_modules/             size       gzip       brotli
+    ├─ package-has-valid.js    XXXX KB    XXXX KB    XXXX KB
+    └─ package-no-valid.js    XXXX KB    XXXX KB    XXXX KB

@@ -1,0 +1,9 @@
+{
+  "install": ["array-flatten"],
+  "installOptions": {
+    "sourceMap": true
+  },
+  "buildOptions": {
+    "minify": false
+  }
+}

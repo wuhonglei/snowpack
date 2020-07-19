@@ -1,0 +1,16 @@
+{
+  "description": "Test that the --optimize flag overrides the config",
+  "scripts": {
+    "TEST": "node ../../../pkg/dist-node/index.bin.js --no-source-map"
+  },
+  "snowpack": {
+    "install": ["shallow-equal"],
+    "sourceMap": true,
+    "buildOptions": {
+      "minify": false
+    }
+  },
+  "dependencies": {
+    "shallow-equal": "^1.2.1"
+  }
+}

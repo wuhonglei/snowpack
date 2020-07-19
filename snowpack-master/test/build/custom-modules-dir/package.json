@@ -1,0 +1,19 @@
+{
+  "description": "This test ensures that Snowpack can build when /my_modules is the web modules dir",
+  "scripts": {
+    "prepare": "node ../../../pkg/dist-node/index.bin.js",
+    "TEST": "node ../../../pkg/dist-node/index.bin.js build"
+  },
+  "snowpack": {
+    "scripts": {
+      "mount:src": "mount src --to /_dist_",
+      "mount:web_modules": "mount $WEB_MODULES --to /my_modules"
+    },
+    "buildOptions": {
+      "minify": false
+    }
+  },
+  "dependencies": {
+    "array-flatten": "^3.0.0"
+  }
+}

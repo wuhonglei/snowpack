@@ -1,0 +1,16 @@
+{
+  "description": "Test that we properly handle a package.json 'browser' object.",
+  "scripts": {
+    "TEST": "node ../../../pkg/dist-node/index.bin.js"
+  },
+  "snowpack": {
+    "install": ["package-has-valid", "package-no-valid"],
+    "buildOptions": {
+      "minify": false
+    }
+  },
+  "dependencies": {
+    "package-has-valid": "^1.2.3",
+    "package-no-valid": "^1.2.3"
+  }
+}

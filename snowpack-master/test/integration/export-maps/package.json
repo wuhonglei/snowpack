@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "TEST": "node --no-warnings ../../../pkg/dist-node/index.bin.js"
+  },
+  "snowpack": {
+    "install": [
+      "preact"
+    ],
+    "buildOptions": {
+      "minify": false
+    }
+  },
+  "dependencies": {
+    "preact": "10.3.1"
+  }
+}
