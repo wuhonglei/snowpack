@@ -1,0 +1,243 @@
+
+> @ build /Users/wuhonglei/Desktop/JS/snowpack/without-es-module
+> snowpack build
+
+-src /Users/wuhonglei/Desktop/JS/snowpack/without-es-module/.browserslistrc
+-dest /Users/wuhonglei/Desktop/JS/snowpack/without-es-module/.build/.browserslistrc
+-src /Users/wuhonglei/Desktop/JS/snowpack/without-es-module/babel.config.json
+-dest /Users/wuhonglei/Desktop/JS/snowpack/without-es-module/.build/babel.config.json
+config- { exclude:
+   [ '**/node_modules/**/*',
+     '**/.types/**/*',
+     '__tests__/**/*',
+     '**/*.@(spec|test).*' ],
+  plugins:
+   [ [ '@snowpack/plugin-copy', [Object] ],
+     [ '@snowpack/plugin-webpack', [Object] ] ],
+  installOptions:
+   { dest:
+      '/Users/wuhonglei/Desktop/JS/snowpack/without-es-module/web_modules',
+     externalPackage: [],
+     installTypes: false,
+     env: {},
+     alias: {},
+     namedExports: [],
+     rollup: { plugins: [], dedupe: [] } },
+  devOptions:
+   { secure: false,
+     port: 8080,
+     open: 'default',
+     out:
+      '/Users/wuhonglei/Desktop/JS/snowpack/without-es-module/build',
+     fallback: 'index.html',
+     hmr: true,
+     bundle: undefined },
+  buildOptions: { baseUrl: '/', metaDir: '__snowpack__' },
+  webDependencies: undefined,
+  scripts:
+   { 'mount:public': 'mount public --to /',
+     'mount:src': 'mount src --to /_dist_' },
+  knownEntrypoints: [],
+  proxy: {} }
+args- { outputPattern:
+   { css: './css/index.[contentHash].css',
+     js: './js/index.[contentHash].js' },
+  extendConfig: [Function: extendConfig] }
+[2J[3J[HSnowpack
+
+  ./build Building your application...
+
+  mount:public............[READY] mount public --to /
+  mount:src...............[READY] mount src --to /_dist_
+  build:.js,.jsx,.ts,.tsx.[READY] (default) esbuild
+  bundle:*................[READY] (plugin) @snowpack/plugin-webpack
+
+[2J[3J[HSnowpack
+
+  ./build Building your application...
+
+  mount:public............[RUNNING] mount public --to /
+  mount:src...............[READY] mount src --to /_dist_
+  build:.js,.jsx,.ts,.tsx.[READY] (default) esbuild
+  bundle:*................[READY] (plugin) @snowpack/plugin-webpack
+
+[2J[3J[HSnowpack
+
+  ./build Building your application...
+
+  mount:public............[DONE] mount public --to /
+  mount:src...............[READY] mount src --to /_dist_
+  build:.js,.jsx,.ts,.tsx.[READY] (default) esbuild
+  bundle:*................[READY] (plugin) @snowpack/plugin-webpack
+
+[2J[3J[HSnowpack
+
+  ./build Building your application...
+
+  mount:public............[DONE] mount public --to /
+  mount:src...............[RUNNING] mount src --to /_dist_
+  build:.js,.jsx,.ts,.tsx.[READY] (default) esbuild
+  bundle:*................[READY] (plugin) @snowpack/plugin-webpack
+
+[2J[3J[HSnowpack
+
+  ./build Building your application...
+
+  mount:public............[DONE] mount public --to /
+  mount:src...............[DONE] mount src --to /_dist_
+  build:.js,.jsx,.ts,.tsx.[READY] (default) esbuild
+  bundle:*................[READY] (plugin) @snowpack/plugin-webpack
+
+[2J[3J[HSnowpack
+
+  ./build Building your application...
+
+  mount:public............[DONE] mount public --to /
+  mount:src...............[DONE] mount src --to /_dist_
+  build:.js,.jsx,.ts,.tsx.[RUNNING] (default) esbuild
+  bundle:*................[READY] (plugin) @snowpack/plugin-webpack
+
+[2J[3J[HSnowpack
+
+  ./build Building your application...
+
+  mount:public............[DONE] mount public --to /
+  mount:src...............[DONE] mount src --to /_dist_
+  build:.js,.jsx,.ts,.tsx.[DONE] (default) esbuild
+  bundle:*................[READY] (plugin) @snowpack/plugin-webpack
+
+[2J[3J[HSnowpack
+
+  ./build Building your application...
+
+  mount:public............[DONE] mount public --to /
+  mount:src...............[DONE] mount src --to /_dist_
+  build:.js,.jsx,.ts,.tsx.[DONE] (default) esbuild
+  bundle:*................[READY] (plugin) @snowpack/plugin-webpack
+
+▼ Console
+
+  [log] ! optimizing dependencies...
+
+[2J[3J[HSnowpack
+
+  ./build Building your application...
+
+  mount:public............[DONE] mount public --to /
+  mount:src...............[DONE] mount src --to /_dist_
+  build:.js,.jsx,.ts,.tsx.[DONE] (default) esbuild
+  bundle:*................[READY] (plugin) @snowpack/plugin-webpack
+
+▼ Console
+
+  [log] ! optimizing dependencies...
+  [log] 
+    ⦿ web_modules/           size       gzip       brotli   
+      ├─ canvas-confetti.js  16.01 KB   4.46 KB    0 KB
+      └─ lodash.js           542.77 KB  96.78 KB   0 KB
+
+[2J[3J[HSnowpack
+
+  ./build Building your application...
+
+  mount:public............[DONE] mount public --to /
+  mount:src...............[DONE] mount src --to /_dist_
+  build:.js,.jsx,.ts,.tsx.[DONE] (default) esbuild
+  bundle:*................[RUNNING] (plugin) @snowpack/plugin-webpack
+
+▼ Console
+
+  [log] ! optimizing dependencies...
+  [log] 
+    ⦿ web_modules/           size       gzip       brotli   
+      ├─ canvas-confetti.js  16.01 KB   4.46 KB    0 KB
+      └─ lodash.js           542.77 KB  96.78 KB   0 KB
+
+bundle [Arguments] {
+  '0':
+   { srcDirectory:
+      '/Users/wuhonglei/Desktop/JS/snowpack/without-es-module/.build',
+     destDirectory:
+      '/Users/wuhonglei/Desktop/JS/snowpack/without-es-module/build',
+     jsFilePaths:
+      Set {
+        '/Users/wuhonglei/Desktop/JS/snowpack/without-es-module/src/index.js' },
+     log: [Function: log] } }
+[2J[3J[HSnowpack
+
+  ./build Building your application...
+
+  mount:public............[DONE] mount public --to /
+  mount:src...............[DONE] mount src --to /_dist_
+  build:.js,.jsx,.ts,.tsx.[DONE] (default) esbuild
+  bundle:*................[RUNNING] (plugin) @snowpack/plugin-webpack
+
+▼ Console
+
+  [log] ! optimizing dependencies...
+  [log] 
+    ⦿ web_modules/           size       gzip       brotli   
+      ├─ canvas-confetti.js  16.01 KB   4.46 KB    0 KB
+      └─ lodash.js           542.77 KB  96.78 KB   0 KB
+  
+  
+  [error] [BABEL] Note: The code generator has deoptimised the styling of /Users/wuhonglei/Desktop/JS/snowpack/without-es-module/.build/web_modules/lodash.js as it exceeds the max of 500KB.
+
+[2J[3J[HSnowpack
+
+  ./build Building your application...
+
+  mount:public............[DONE] mount public --to /
+  mount:src...............[DONE] mount src --to /_dist_
+  build:.js,.jsx,.ts,.tsx.[DONE] (default) esbuild
+  bundle:*................[RUNNING] (plugin) @snowpack/plugin-webpack
+
+▼ Console
+
+  [log] ! optimizing dependencies...
+  [log] 
+    ⦿ web_modules/           size       gzip       brotli   
+      ├─ canvas-confetti.js  16.01 KB   4.46 KB    0 KB
+      └─ lodash.js           542.77 KB  96.78 KB   0 KB
+  
+  
+  [error] [BABEL] Note: The code generator has deoptimised the styling of /Users/wuhonglei/Desktop/JS/snowpack/without-es-module/.build/web_modules/lodash.js as it exceeds the max of 500KB.
+  [log]                                [1mAsset[39m[22m       [1mSize[39m[22m  [1mChunks[39m[22m  [1m[39m[22m                       [1m[39m[22m[1mChunk Names[39m[22m
+  [1m[32m./css/index.2ae311d626af0b7d97d2.css[39m[22m   40 bytes   [1mindex[39m[22m  [1m[32m[emitted] [immutable][39m[22m  index
+    [1m[32m./js/index.4fb2bdde51d836888ab3.js[39m[22m    503 KiB   [1mindex[39m[22m  [1m[32m[emitted] [immutable][39m[22m  index
+                   [1m[32m__snowpack__/env.js[39m[22m   61 bytes        [1m[39m[22m  [1m[32m[emitted][39m[22m              
+                           [1m[32mfavicon.ico[39m[22m     15 KiB        [1m[39m[22m  [1m[32m[emitted][39m[22m              
+                             [1m[32mindex.css[39m[22m  178 bytes        [1m[39m[22m  [1m[32m[emitted][39m[22m              
+                              [1m[32mlogo.svg[39m[22m  767 bytes        [1m[39m[22m  [1m[32m[emitted][39m[22m              
+                            [1m[32mrobots.txt[39m[22m   67 bytes        [1m[39m[22m  [1m[32m[emitted][39m[22m
+
+[2J[3J[HSnowpack
+
+  ./build Building your application...
+
+  mount:public............[DONE] mount public --to /
+  mount:src...............[DONE] mount src --to /_dist_
+  build:.js,.jsx,.ts,.tsx.[DONE] (default) esbuild
+  bundle:*................[DONE] (plugin) @snowpack/plugin-webpack
+
+▼ Console
+
+  [log] ! optimizing dependencies...
+  [log] 
+    ⦿ web_modules/           size       gzip       brotli   
+      ├─ canvas-confetti.js  16.01 KB   4.46 KB    0 KB
+      └─ lodash.js           542.77 KB  96.78 KB   0 KB
+  
+  
+  [error] [BABEL] Note: The code generator has deoptimised the styling of /Users/wuhonglei/Desktop/JS/snowpack/without-es-module/.build/web_modules/lodash.js as it exceeds the max of 500KB.
+  [log]                                [1mAsset[39m[22m       [1mSize[39m[22m  [1mChunks[39m[22m  [1m[39m[22m                       [1m[39m[22m[1mChunk Names[39m[22m
+  [1m[32m./css/index.2ae311d626af0b7d97d2.css[39m[22m   40 bytes   [1mindex[39m[22m  [1m[32m[emitted] [immutable][39m[22m  index
+    [1m[32m./js/index.4fb2bdde51d836888ab3.js[39m[22m    503 KiB   [1mindex[39m[22m  [1m[32m[emitted] [immutable][39m[22m  index
+                   [1m[32m__snowpack__/env.js[39m[22m   61 bytes        [1m[39m[22m  [1m[32m[emitted][39m[22m              
+                           [1m[32mfavicon.ico[39m[22m     15 KiB        [1m[39m[22m  [1m[32m[emitted][39m[22m              
+                             [1m[32mindex.css[39m[22m  178 bytes        [1m[39m[22m  [1m[32m[emitted][39m[22m              
+                              [1m[32mlogo.svg[39m[22m  767 bytes        [1m[39m[22m  [1m[32m[emitted][39m[22m              
+                            [1m[32mrobots.txt[39m[22m   67 bytes        [1m[39m[22m  [1m[32m[emitted][39m[22m
+
+▶ Build Complete!
+
