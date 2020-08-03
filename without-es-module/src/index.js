@@ -3,19 +3,15 @@
  * When you're ready to start on your site, clear the file. Happy hacking!
  **/
 
-import confetti from 'canvas-confetti';
+//  自定义 css 文件
 import './css/base.css';
 
-import { default as _ } from 'lodash';
-_.forEach([1, 2, 3], (item) => {
+// 第三方库(node_modules)
+import { forEach } from 'lodash';
+forEach([1, 2, 3], (item) => {
     console.info(item);
 });
 
-var obj = {};
-console.info('optional', obj.name?.age)
-console.info('??', obj.name ?? 3)
-
-confetti.create(document.getElementById('canvas'), {
-    resize: true,
-    useWorker: true,
-})({ particleCount: 200, spread: 200 });
+// 自定义 js 文件
+import { sayHello } from './js/helper.js';
+sayHello('hello world');

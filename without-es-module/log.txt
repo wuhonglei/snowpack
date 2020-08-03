@@ -132,9 +132,8 @@ args- { outputPattern:
 
   [log] ! optimizing dependencies...
   [log] 
-    ⦿ web_modules/           size       gzip       brotli   
-      ├─ canvas-confetti.js  16.01 KB   4.46 KB    0 KB
-      └─ lodash.js           542.77 KB  96.78 KB   0 KB
+    ⦿ web_modules/     size       gzip       brotli   
+      └─ lodash.js     542.79 KB  96.8 KB    0 KB
 
 [2J[3J[HSnowpack
 
@@ -149,9 +148,8 @@ args- { outputPattern:
 
   [log] ! optimizing dependencies...
   [log] 
-    ⦿ web_modules/           size       gzip       brotli   
-      ├─ canvas-confetti.js  16.01 KB   4.46 KB    0 KB
-      └─ lodash.js           542.77 KB  96.78 KB   0 KB
+    ⦿ web_modules/     size       gzip       brotli   
+      └─ lodash.js     542.79 KB  96.8 KB    0 KB
 
 bundle [Arguments] {
   '0':
@@ -161,8 +159,145 @@ bundle [Arguments] {
       '/Users/wuhonglei/Desktop/JS/snowpack/without-es-module/build',
      jsFilePaths:
       Set {
-        '/Users/wuhonglei/Desktop/JS/snowpack/without-es-module/src/index.js' },
+        '/Users/wuhonglei/Desktop/JS/snowpack/without-es-module/src/index.js',
+        '/Users/wuhonglei/Desktop/JS/snowpack/without-es-module/src/js/helper.js',
+        '/Users/wuhonglei/Desktop/JS/snowpack/without-es-module/src/other.js' },
      log: [Function: log] } }
+--finalConfig-- {
+    "context": "/Users/wuhonglei/Desktop/JS/snowpack/without-es-module/.build",
+    "resolve": {
+        "alias": {
+            "/__snowpack__": "/Users/wuhonglei/Desktop/JS/snowpack/without-es-module/.build/__snowpack__",
+            "/web_modules": "/Users/wuhonglei/Desktop/JS/snowpack/without-es-module/.build/web_modules"
+        }
+    },
+    "module": {
+        "rules": [
+            {
+                "test": {},
+                "exclude": {},
+                "use": [
+                    {
+                        "loader": "babel-loader",
+                        "options": {
+                            "cwd": "/Users/wuhonglei/Desktop/JS/snowpack/without-es-module/.build",
+                            "configFile": "/Users/wuhonglei/Desktop/JS/snowpack/without-es-module/babel.config.json",
+                            "babelrc": false
+                        }
+                    },
+                    {
+                        "loader": "/Users/wuhonglei/Desktop/JS/snowpack/without-es-module/node_modules/_@snowpack_plugin-webpack@1.6.0-alpha.0@@snowpack/plugin-webpack/import-meta-plugin/plugin.js"
+                    }
+                ]
+            },
+            {
+                "test": {},
+                "exclude": [
+                    {},
+                    {},
+                    {}
+                ],
+                "use": [
+                    {
+                        "loader": "file-loader",
+                        "options": {
+                            "name": "assets/[name]-[hash].[ext]"
+                        }
+                    }
+                ]
+            },
+            {
+                "test": {},
+                "use": [
+                    "style-loader",
+                    "css-loader",
+                    "postcss-loader"
+                ]
+            }
+        ]
+    },
+    "mode": "production",
+    "optimization": {
+        "minimizer": [
+            {
+                "options": {
+                    "test": {},
+                    "extractComments": true,
+                    "cache": true,
+                    "parallel": true,
+                    "terserOptions": {}
+                }
+            },
+            {
+                "pluginDescriptor": {
+                    "name": "OptimizeCssAssetsWebpackPlugin"
+                },
+                "options": {
+                    "assetProcessors": [
+                        {
+                            "phase": "compilation.optimize-chunk-assets",
+                            "regExp": {}
+                        }
+                    ],
+                    "assetNameRegExp": {},
+                    "cssProcessorOptions": {},
+                    "cssProcessorPluginOptions": {}
+                },
+                "phaseAssetProcessors": {
+                    "compilation.optimize-chunk-assets": [
+                        {
+                            "phase": "compilation.optimize-chunk-assets",
+                            "regExp": {}
+                        }
+                    ],
+                    "compilation.optimize-assets": [],
+                    "emit": []
+                },
+                "deleteAssetsMap": {}
+            }
+        ]
+    },
+    "plugins": [
+        {
+            "options": {
+                "filename": "./css/index.[contentHash].css",
+                "ignoreOrder": false,
+                "chunkFilename": "./css/[id].index.[contentHash].css"
+            }
+        },
+        {
+            "patterns": [
+                {
+                    "from": "/Users/wuhonglei/Desktop/JS/snowpack/without-es-module/.build",
+                    "to": "/Users/wuhonglei/Desktop/JS/snowpack/without-es-module/build",
+                    "globOptions": {
+                        "ignore": [
+                            "/Users/wuhonglei/Desktop/JS/snowpack/without-es-module/.build/index.html",
+                            "**/_dist_/**",
+                            "**/web_modules/**"
+                        ]
+                    },
+                    "noErrorOnMissing": true
+                }
+            ],
+            "options": {}
+        },
+        {
+            "options": {
+                "banner": "Mon Aug 03 2020 23:49:36 GMT+0800 (GMT+08:00)"
+            }
+        }
+    ],
+    "entry": {
+        "index": "/Users/wuhonglei/Desktop/JS/snowpack/without-es-module/.build/_dist_/index.js",
+        "other": "/Users/wuhonglei/Desktop/JS/snowpack/without-es-module/.build/_dist_/other.js"
+    },
+    "output": {
+        "path": "/Users/wuhonglei/Desktop/JS/snowpack/without-es-module/build",
+        "publicPath": "/",
+        "filename": "./js/index.[contentHash].js"
+    }
+}
 [2J[3J[HSnowpack
 
   ./build Building your application...
@@ -176,9 +311,8 @@ bundle [Arguments] {
 
   [log] ! optimizing dependencies...
   [log] 
-    ⦿ web_modules/           size       gzip       brotli   
-      ├─ canvas-confetti.js  16.01 KB   4.46 KB    0 KB
-      └─ lodash.js           542.77 KB  96.78 KB   0 KB
+    ⦿ web_modules/     size       gzip       brotli   
+      └─ lodash.js     542.79 KB  96.8 KB    0 KB
   
   
   [error] [BABEL] Note: The code generator has deoptimised the styling of /Users/wuhonglei/Desktop/JS/snowpack/without-es-module/.build/web_modules/lodash.js as it exceeds the max of 500KB.
@@ -196,20 +330,22 @@ bundle [Arguments] {
 
   [log] ! optimizing dependencies...
   [log] 
-    ⦿ web_modules/           size       gzip       brotli   
-      ├─ canvas-confetti.js  16.01 KB   4.46 KB    0 KB
-      └─ lodash.js           542.77 KB  96.78 KB   0 KB
+    ⦿ web_modules/     size       gzip       brotli   
+      └─ lodash.js     542.79 KB  96.8 KB    0 KB
   
   
   [error] [BABEL] Note: The code generator has deoptimised the styling of /Users/wuhonglei/Desktop/JS/snowpack/without-es-module/.build/web_modules/lodash.js as it exceeds the max of 500KB.
-  [log]                                [1mAsset[39m[22m       [1mSize[39m[22m  [1mChunks[39m[22m  [1m[39m[22m                       [1m[39m[22m[1mChunk Names[39m[22m
-  [1m[32m./css/index.2ae311d626af0b7d97d2.css[39m[22m   40 bytes   [1mindex[39m[22m  [1m[32m[emitted] [immutable][39m[22m  index
-    [1m[32m./js/index.4fb2bdde51d836888ab3.js[39m[22m    503 KiB   [1mindex[39m[22m  [1m[32m[emitted] [immutable][39m[22m  index
-                   [1m[32m__snowpack__/env.js[39m[22m   61 bytes        [1m[39m[22m  [1m[32m[emitted][39m[22m              
-                           [1m[32mfavicon.ico[39m[22m     15 KiB        [1m[39m[22m  [1m[32m[emitted][39m[22m              
-                             [1m[32mindex.css[39m[22m  178 bytes        [1m[39m[22m  [1m[32m[emitted][39m[22m              
-                              [1m[32mlogo.svg[39m[22m  767 bytes        [1m[39m[22m  [1m[32m[emitted][39m[22m              
-                            [1m[32mrobots.txt[39m[22m   67 bytes        [1m[39m[22m  [1m[32m[emitted][39m[22m
+  [log]                                          [1mAsset[39m[22m        [1mSize[39m[22m  [1mChunks[39m[22m  [1m[39m[22m                       [1m[39m[22m[1mChunk Names[39m[22m
+              [1m[32m./js/index.12c0ffd714c809a2954d.js[39m[22m    75.9 KiB       [1m0[39m[22m  [1m[32m[emitted] [immutable][39m[22m  index
+  [1m[32m./js/index.12c0ffd714c809a2954d.js.LICENSE.txt[39m[22m    53 bytes        [1m[39m[22m  [1m[32m[emitted][39m[22m              
+              [1m[32m./js/index.257b8e9bbeedc3c1232f.js[39m[22m    1.02 KiB       [1m1[39m[22m  [1m[32m[emitted] [immutable][39m[22m  other
+  [1m[32m./js/index.257b8e9bbeedc3c1232f.js.LICENSE.txt[39m[22m    53 bytes        [1m[39m[22m  [1m[32m[emitted][39m[22m              
+                             [1m[32m__snowpack__/env.js[39m[22m    56 bytes        [1m[39m[22m  [1m[32m[emitted][39m[22m              
+                                     [1m[32mfavicon.ico[39m[22m      15 KiB        [1m[39m[22m  [1m[32m[emitted][39m[22m              
+                                       [1m[32mindex.css[39m[22m   132 bytes        [1m[39m[22m  [1m[32m[emitted][39m[22m              
+                                        [1m[32mlogo.svg[39m[22m   767 bytes        [1m[39m[22m  [1m[32m[emitted][39m[22m              
+                                      [1m[32mother.html[39m[22m  1010 bytes        [1m[39m[22m  [1m[32m[emitted][39m[22m              
+                                      [1m[32mrobots.txt[39m[22m    67 bytes        [1m[39m[22m  [1m[32m[emitted][39m[22m
 
 [2J[3J[HSnowpack
 
@@ -224,20 +360,22 @@ bundle [Arguments] {
 
   [log] ! optimizing dependencies...
   [log] 
-    ⦿ web_modules/           size       gzip       brotli   
-      ├─ canvas-confetti.js  16.01 KB   4.46 KB    0 KB
-      └─ lodash.js           542.77 KB  96.78 KB   0 KB
+    ⦿ web_modules/     size       gzip       brotli   
+      └─ lodash.js     542.79 KB  96.8 KB    0 KB
   
   
   [error] [BABEL] Note: The code generator has deoptimised the styling of /Users/wuhonglei/Desktop/JS/snowpack/without-es-module/.build/web_modules/lodash.js as it exceeds the max of 500KB.
-  [log]                                [1mAsset[39m[22m       [1mSize[39m[22m  [1mChunks[39m[22m  [1m[39m[22m                       [1m[39m[22m[1mChunk Names[39m[22m
-  [1m[32m./css/index.2ae311d626af0b7d97d2.css[39m[22m   40 bytes   [1mindex[39m[22m  [1m[32m[emitted] [immutable][39m[22m  index
-    [1m[32m./js/index.4fb2bdde51d836888ab3.js[39m[22m    503 KiB   [1mindex[39m[22m  [1m[32m[emitted] [immutable][39m[22m  index
-                   [1m[32m__snowpack__/env.js[39m[22m   61 bytes        [1m[39m[22m  [1m[32m[emitted][39m[22m              
-                           [1m[32mfavicon.ico[39m[22m     15 KiB        [1m[39m[22m  [1m[32m[emitted][39m[22m              
-                             [1m[32mindex.css[39m[22m  178 bytes        [1m[39m[22m  [1m[32m[emitted][39m[22m              
-                              [1m[32mlogo.svg[39m[22m  767 bytes        [1m[39m[22m  [1m[32m[emitted][39m[22m              
-                            [1m[32mrobots.txt[39m[22m   67 bytes        [1m[39m[22m  [1m[32m[emitted][39m[22m
+  [log]                                          [1mAsset[39m[22m        [1mSize[39m[22m  [1mChunks[39m[22m  [1m[39m[22m                       [1m[39m[22m[1mChunk Names[39m[22m
+              [1m[32m./js/index.12c0ffd714c809a2954d.js[39m[22m    75.9 KiB       [1m0[39m[22m  [1m[32m[emitted] [immutable][39m[22m  index
+  [1m[32m./js/index.12c0ffd714c809a2954d.js.LICENSE.txt[39m[22m    53 bytes        [1m[39m[22m  [1m[32m[emitted][39m[22m              
+              [1m[32m./js/index.257b8e9bbeedc3c1232f.js[39m[22m    1.02 KiB       [1m1[39m[22m  [1m[32m[emitted] [immutable][39m[22m  other
+  [1m[32m./js/index.257b8e9bbeedc3c1232f.js.LICENSE.txt[39m[22m    53 bytes        [1m[39m[22m  [1m[32m[emitted][39m[22m              
+                             [1m[32m__snowpack__/env.js[39m[22m    56 bytes        [1m[39m[22m  [1m[32m[emitted][39m[22m              
+                                     [1m[32mfavicon.ico[39m[22m      15 KiB        [1m[39m[22m  [1m[32m[emitted][39m[22m              
+                                       [1m[32mindex.css[39m[22m   132 bytes        [1m[39m[22m  [1m[32m[emitted][39m[22m              
+                                        [1m[32mlogo.svg[39m[22m   767 bytes        [1m[39m[22m  [1m[32m[emitted][39m[22m              
+                                      [1m[32mother.html[39m[22m  1010 bytes        [1m[39m[22m  [1m[32m[emitted][39m[22m              
+                                      [1m[32mrobots.txt[39m[22m    67 bytes        [1m[39m[22m  [1m[32m[emitted][39m[22m
 
 ▶ Build Complete!
 
